@@ -1,0 +1,23 @@
+{
+    "skills": [
+        {"name": "React", "percent": "80%"},
+        {"name": "JavaScript", "percent": "75%"},
+        {"name": "HTML", "percent": "80%"},
+        {"name": "CSS", "percent": "80%"},
+        {"name": "Node", "percent": "65%"},
+        {"name": "MySQl", "percent": "60%"},
+        {"name": "Next", "percent": "45%"},
+        {"name": "Tailwind Css", "percent": "45%"}
+    ],
+    "education": [
+        {"degree": "Bachelor of Engineering (IT)","university":"Technological University (Mandalay)","duration": "2013-2018"},
+        {"degree": "Diploma in English","university":"University of Foreign Language (Mandalay)","duration": "2013-2014"}
+    ],
+    "experience": [
+        {"position": "FullStack Developer (React,Node)","company": "Kumo Solution","duration" : "Jan 2020 ~ Oct 2022", "work": "Development web projects with Dynamic, analytics data and and IOT solution. Proficiently trouble simply and complex technological issues for different assigned projects and achieving customer satisfaction."},
+        {"position": "Web Developer (PHP)","company": "Yisu Myanmar","duration" : "June 2019 ~ Dec 2020", "work": "Planned, developed, tested, deployed, and maintained web applications"},
+        {"position": "InternShip Trainee","company": "One Cloud Co.ltd","duration" : "May 2018 ~ June 2018", "work": "Learning and self study for web development"},
+        {"position": "Freelance","company": "","duration" : "", "work": "Learning and self study for new technologies"}
+    ]
+ 
+}
