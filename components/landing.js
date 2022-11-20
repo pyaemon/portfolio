@@ -1,8 +1,8 @@
 import Image from "next/image";
-import React, { useState } from "react";
-import img from '../images/main.jpeg'
+import React, { useEffect, useState } from "react";
+import img from '../images/pp.JPG'
 import img1 from '../images/cover1.jpeg'
-import img2 from '../images/pp.JPG'
+import img2 from '../images/pp2.jpeg'
 import {FaArrowCircleLeft,FaArrowCircleRight,FaMailBulk,FaFacebookSquare,FaLinkedin} from 'react-icons/fa'
 import Link from "next/link";
 
@@ -22,13 +22,20 @@ const Landing=()=>{
     if(!Array.isArray(ImageData) || ImageData.length <=0){
         return null
     }
+    useEffect(()=>{
+        setTimeout(()=>{
+            nextSlide()
+        },4000)
+    },[current])
+
    
     return(
-   
+        
+
     <div className={`flex flex-wrap items-center justify-center bg-fixed w-full bg-center lg:h-screen bg-cover bg-[url('../images/whiteBg.jpg')] id=Landing`}>
         <div className='max-w-[800px] px-2 flex justify-center items-center my-20' >
-            <div className='grid md:grid-cols-2 gap-20 '>
-                <div className="relative flex justify-center p-4 ">
+            <div className={`grid md:grid-cols-2 lg:gap-20 `}>
+               <div className="relative flex justify-center p-4 ">
                     {
                         ImageData?.map((v,i)=>{
                         return(
@@ -43,12 +50,12 @@ const Landing=()=>{
                                 <FaArrowCircleLeft
                                 onClick={prevSlide}
                                 size={25}
-                                className={`absolute top-[50%] text-white/100 cursor-pointer select-none z-[2] `}
+                                className={`absolute top-[50%] text-white/100 cursor-pointer select-none z-[2] left-[30px]`}
                                 />
                                 {
                                     i=== current &&
                                     <Image 
-                                    className="shadow-lg"
+                                    className="shadow-lg "
                                     src={v.src}
                                     alt='/'
                                     width='320'
@@ -59,14 +66,14 @@ const Landing=()=>{
                                 <FaArrowCircleRight 
                                 onClick={nextSlide}
                                 size={25}
-                                className={`absolute top-[50%] right-[35px] text-white/100 cursor-pointer select-none z-[2]`}
+                                className={`absolute top-[50%] right-[30px] text-white/100 cursor-pointer select-none z-[2]`}
                                 />
                             </div>
                             
                         )
                         })
                     }
-                </div>
+                </div> 
                 <div className="mt-20">
                     <header className=" group">
                         <h1 className="mb-1 text-xl font-semibold text-blue-700 md:text:xl">
