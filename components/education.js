@@ -13,8 +13,8 @@ const Education=({eduData})=>{
             <div className='sm:flex hidden'><Image src={Edu} alt='/' width='320' height='220'/></div> 
                    <div className=' mt-6'>
                     {
-                        eduData?.map(v=>
-                        <div className='my-3'>
+                        eduData?.map((v,k)=>
+                        <div className='my-3' key={k}>
                           <div className='flex'>
                             {/* <FaGraduationCap size={25} className='mt-5'/> */}
                             <h4 className='text-xl font-bold pb-4'>{v.degree}</h4>

@@ -70,7 +70,7 @@ const Landing=()=>{
                 <div className="mt-20">
                     <header className=" group">
                         <h1 className="mb-1 text-xl font-semibold text-blue-700 md:text:xl">
-                            Hello, I'm <br className="block md:hidden" />
+                            Hello, I&apos;m <br className="block md:hidden" />
                             <span
                             className="inline-flex pt-2 overflow-x-hidden animate-type group-hover:animate-type-reverse whitespace-nowrap text-brand-accent will-change-transform"
                             >
@@ -82,7 +82,7 @@ const Landing=()=>{
                         </h1>
                     </header>
                     <br/>
-                    <p className="flex">I am Full Stack Developer.<br/> I'm graduated from Technological University (Mandalay).<br/>
+                    <p className="flex">I am Full Stack Developer.<br/> I&apos;m graduated from Technological University (Mandalay).<br/>
                         Experienced with development cycle for dynamic web projects and IOT solution.</p><br/>
                     <div className='flex text-center'>
                         <div className="mr-3 rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-110 ease-in duration-300"><Link href='mailto: pyaephyomon114@gmail.com'><FaMailBulk size={20} color='#3b82f6'/></Link></div>

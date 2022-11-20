@@ -19,7 +19,7 @@ const Projects=()=>{
                     {
                         projectData?.map((v,i)=>{
                             return(
-                            <div>
+                            <div key={i}>
                                 <div className='relative'>
                                     <Image
                                     className='w-full h-full p-4'
