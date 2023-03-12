@@ -32,15 +32,17 @@ const Landing = () => {
   if (!Array.isArray(ImageData) || ImageData.length <= 0) {
     return null;
   }
-  useEffect(() => {
-    slideMove();
-  }, [current]);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     nextSlide();
+  //   }, 6000);
+  // }, [current]);
 
-  const slideMove = () => {
-    setTimeout(() => {
-      nextSlide();
-    }, 6000);
-  };
+  // const slideMove = () => {
+  //   setTimeout(() => {
+  //     nextSlide();
+  //   }, 6000);
+  // };
   return (
     <div
       className={`flex flex-wrap items-center justify-center bg-fixed w-full bg-center lg:h-screen bg-cover bg-[url('../images/whiteBg.jpg')] id=Landing`}
