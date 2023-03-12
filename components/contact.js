@@ -11,7 +11,7 @@ const Contact=()=>{
                     </div>
                     <input className='w-full h-full my-2 border shadow-lg p-3' type='text' placeholder='Subject'/>
                     <textarea className='w-full border shadow-lg p-3' cols='30' rows='7' placeholder='Message'></textarea>
-                    <button className='border shadow-lg w-full mt-2 p-2'>Submit</button>
+                    <button className='border shadow-lg w-full mt-2 p-2 bg-blue-200'>Submit</button>
                 </form>
                 
             </div>
