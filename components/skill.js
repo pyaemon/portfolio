@@ -4,7 +4,7 @@ import skill from '../images/s3.gif'
 
 const Skills=({mySkill})=>{
     return(
-        <div className='w-full' id='Skills'>
+        <div className='w-full h-screen' id='Skills'>
             <h4 className='text-2xl font-bold text-center p-4'>Skills</h4>
             <div className='max-w-[840px] mx-auto px-2 flex justify-center items-center my-4' >  
                 <div className='grid md:grid-cols-2 gap-8'>
